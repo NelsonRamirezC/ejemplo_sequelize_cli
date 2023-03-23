@@ -1,0 +1,21 @@
+paso 1:
+npm init -y
+
+Paso 2: 
+instalar dependencias:
+npm i express pg pg-hstore sequelize
+npm i sequelize-cli nodemon
+
+paso 3:
+ejecturar sequelize-cli para iniciar un proyecto básico con su estructura
+npx sequelize init
+
+paso 4: generamos modelo para categoria
+npx sequelize model:generate --name Categorias --attributes nombre:string
+
+paso 5: creamos modelo para producto
+npx sequelize model:generate --name Productos --attributes nombre:string,descripcion:string,precio:decimal,stock:integer,idCategoria:integer
+
+paso 6: generar las referencias y asociaciones entre las tablas
+
+paso 7: 
